@@ -1,0 +1,12 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.beinghealth.co/notice-of-privacy-practices
+sources:
+- https://www.beinghealth.co/notice-of-privacy-practices
+- https://www.beinghealth.co/privacy-policy
+standards:
+- id: hipaa
+  conforms: true
+  evidence: These disclosures are designed to exclude PHI and are handled in accordance with HIPAA and applicable privacy regulations.
+docs: https://www.beinghealth.co/notice-of-privacy-practices

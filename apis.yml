@@ -1,23 +1,83 @@
 aid: being-health
+
 name: Being Health
-description: 'Being Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/64c0d111a0343d5ffc92d3e7/6988c5bf0c0e9fd1888104c1_Screenshot%202026-02-08%20121945.jpg
+
+description: "Being Health is a modern psychiatry practice that provides psychiatry, Spravato® treatment, psychotherapy, functional medicine and wellness services—all in one place. It offers integrated mental health care with in‑network insurance plans, virtual and in‑person appointments, and a focus on coordinated treatment for conditions such as anxiety, depression, PTSD, and more. Founded in 2023 and based in New York, Being Health aims to improve mental wellbeing through comprehensive, evidence‑based care."
+
 url: https://raw.githubusercontent.com/api-evangelist/being-health/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- MentalHealth
+- Psychiatry
+- Wellness
+- Telehealth
+- NewYork
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/being-health-conformance.yml
+- type: Hosts
+  url: hosts/being-health-hosts.yml
+- type: Vendors
+  url: vendors/being-health-vendors.yml
+- type: Newsroom
+  url: https://www.beinghealth.co/press
+- type: GettingStarted
+  url: https://help.beinghealth.co/collection/1-getting-started-at-being-health
+- type: Documentation
+  url: https://help.beinghealth.co/
+- type: DomainSecurity
+  url: security/being-health-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.beinghealth.co/
+- type: Blog
+  url: https://www.beinghealth.co/blog
+- type: About
+  url: https://www.beinghealth.co/about
+- type: Contact
+  url: https://www.beinghealth.co/contact
+- type: TermsOfService
+  url: https://www.beinghealth.co/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.beinghealth.co/privacy-policy
+
+# Added by contract module
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: "Documentation pages are rendered via JavaScript and no machine‑readable contract could be retrieved."
+  evidence:
+    - url: https://www.beinghealth.co/get-started
+      status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
